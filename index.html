@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -59,9 +59,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Pong_WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Pong_WebGL.data.br",
-        frameworkUrl: buildUrl + "/Pong_WebGL.framework.js.br",
-        codeUrl: buildUrl + "/Pong_WebGL.wasm.br",
+        dataUrl: buildUrl + "/Pong_WebGL.data",
+        frameworkUrl: buildUrl + "/Pong_WebGL.framework.js",
+        codeUrl: buildUrl + "/Pong_WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Pong",
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       canvas.style.background = "url('" + buildUrl + "/Pong_WebGL.jpg') center / cover";
